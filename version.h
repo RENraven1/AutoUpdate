@@ -6,10 +6,10 @@ class Version
 {
     int major,minor,patch,build;
 
-    QString version;
+
 
 public:
-
+QString version;
    Version(int zmajor, int zminor, int zpatch, int zbuild)
 {
    major=zmajor;
@@ -21,7 +21,10 @@ public:
 {
        version=zversion;
    }
-
+   void Verss()
+   {qDebug()<<"VERSS"<<version;}
+   void Versl()
+      {  qDebug()<<"magor"<<major;}
 };
 
 

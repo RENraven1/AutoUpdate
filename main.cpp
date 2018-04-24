@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QDebug>
 #include <stdio.h>
+#include<iostream>
 #include <QtNetwork/QNetworkReply>
 #include <downloader.h>
 #include <QObject>
@@ -14,15 +15,20 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 //printf("THE WORK !1  \n");
     qDebug() << "NACHALO" ;
-autoup w;
-w.show();
-    QDomDocument d;
- QFile file("C:\\Users\\REN\\Documents\\eyecu\\components.xml");
+//autoup w;
+//w.show();
 
- d.setContent(&file);
+                   // закрываем файл
+   qDebug() << "Downloading is completed";
 
- QDomElement packages=d.documentElement();
-/*
+
+
+
+
+
+
+ /*
+ *
  for (QDomElement package=packages.firstChildElement("Package"); !package.isNull(); package=package.nextSiblingElement("Package"))
  {
  QString name=package.firstChildElement("Name").text();

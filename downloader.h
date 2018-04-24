@@ -14,7 +14,7 @@ class Downloader : public QObject
 public:
     explicit Downloader(QObject *parent = 0);
     void getData();
-    void devas(QIODevice *dev);// Метод инициализации запроса на получение данных
+    void devas();// Метод инициализации запроса на получение данных
 
 signals:
     void onReady();
